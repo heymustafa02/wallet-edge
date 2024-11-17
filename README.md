@@ -1,1 +1,2 @@
-# wallet-edge
+# Wallet-edge
+Your Finance friend
