@@ -11,10 +11,14 @@ function AddExpense({ budgetId, user, refreshData }) {
   const [name, setName] = useState();
   const [amount, setAmount] = useState();
   const [loading, setLoading] = useState(false);
-  /**
-   * Used to Add New Expense
-   */
+  
   const addNewExpense = async () => {
+    // Prevent negative or invalid values
+    if (amount <= 0) {
+      toast.error("Expense amount must be a positive value!");
+      return;
+    }
+  
     setLoading(true);
     const result = await db
       .insert(Expenses)
@@ -25,7 +29,7 @@ function AddExpense({ budgetId, user, refreshData }) {
         createdAt: moment().format("DD/MM/yyy"),
       })
       .returning({ insertedId: Budgets.id });
-
+  
     setAmount("");
     setName("");
     if (result) {

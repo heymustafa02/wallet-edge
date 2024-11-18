@@ -19,7 +19,7 @@ function Hero() {
           }
         >
           <Image
-            src={`/dashboard.png`}
+            src={`/dashboard.jpg`}
             alt="hero"
             height={720}
             width={1400}

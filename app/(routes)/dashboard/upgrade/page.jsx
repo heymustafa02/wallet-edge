@@ -15,7 +15,7 @@ function Upgrade() {
               <p className="mt-2 sm:mt-4">
                 <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">
                   {" "}
-                  30${" "}
+                  7.99${" "}
                 </strong>
 
                 <span className="text-sm font-medium text-gray-700">
@@ -141,7 +141,7 @@ function Upgrade() {
             </ul>
 
             <a
-              href="#"
+              href="https://github.com/heymustafa02"
               className="mt-8 block rounded-full border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-indigo-700 hover:ring-1 hover:ring-indigo-700 focus:outline-none focus:ring active:text-indigo-500"
             >
               Get Started
@@ -158,7 +158,7 @@ function Upgrade() {
               <p className="mt-2 sm:mt-4">
                 <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">
                   {" "}
-                  20${" "}
+                  4.99${" "}
                 </strong>
 
                 <span className="text-sm font-medium text-gray-700">
@@ -246,7 +246,7 @@ function Upgrade() {
             </ul>
 
             <a
-              href="#"
+              href="https://github.com/heymustafa02"
               className="mt-8 block rounded-full border border-indigo-600 bg-white px-12 py-3 text-center text-sm font-medium text-indigo-600 hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
             >
               Get Started
