@@ -66,7 +66,7 @@ import IncomeItem from "./IncomeItem";
 function IncomeList() {
   const [incomelist, setIncomelist] = useState([]);
   const { user } = useUser();
-
+  
   useEffect(() => {
     if (user?.primaryEmailAddress?.emailAddress) {
       getIncomelist();
@@ -90,6 +90,7 @@ function IncomeList() {
     } catch (error) {
       console.error("Error fetching income list:", error);
     }
+    
   };
   
   return (

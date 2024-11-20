@@ -95,18 +95,19 @@ function Dashboard() {
           />
         </div>
         <div className="grid gap-5">
-          <h2 className="font-bold text-lg">Latest Budgets</h2>
-          {budgetList?.length > 0
-            ? budgetList.map((budget, index) => (
-                <BudgetItem budget={budget} key={index} />
-              ))
-            : [1, 2, 3, 4].map((item, index) => (
-                <div
-                  className="h-[180xp] w-full
-                 bg-slate-200 rounded-lg animate-pulse"
-                ></div>
-              ))}
-        </div>
+  <h2 className="font-bold text-lg">Latest Budgets</h2>
+  {budgetList?.length > 0
+    ? budgetList.map((budget) => (
+        <BudgetItem key={budget.id || budget.name} budget={budget} /> // Use unique identifier
+      ))
+    : [1, 2, 3, 4].map((item, index) => (
+        <div
+          key={index} // Using index here is fine because it's a static placeholder
+          className="h-[180px] w-full bg-slate-200 rounded-lg animate-pulse"
+        ></div>
+      ))}
+</div>
+
       </div>
     </div>
   );

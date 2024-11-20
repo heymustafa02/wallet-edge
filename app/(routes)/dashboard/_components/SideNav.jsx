@@ -6,8 +6,7 @@ import {
   ReceiptText,
   ShieldCheck,
   CircleDollarSign,
-  TrendingUp,
-  TrendingDownIcon,
+  AlignJustify, X
 } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
@@ -64,11 +63,7 @@ function SideNav() {
   }, [path]);
   return (
     <div className="h-screen p-5 border shadow-sm">
-      {/* <Image src={'/logo.svg'}
-        alt='logo'
-        width={160}
-        height={100}
-        /> */}
+      
       <div className="flex flex-row items-center">
         <Image src={"/logo.png"} alt="logo" width={70} height={60} />
         <span className="text-blue-800 font-bold text-xl">Wallet Edge</span>
