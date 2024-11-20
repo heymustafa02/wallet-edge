@@ -116,6 +116,10 @@ function Dashboard() {
               <LayoutGrid className="mr-2 h-5 w-5 text-gray-600" />
               Dashboard
             </a>
+            <a href="/dashboard/incomes" className="flex items-center hover:bg-gray-100 p-2 rounded-lg">
+              <CircleDollarSign className="mr-2 h-5 w-5 text-gray-600" />
+              Incomes
+            </a>
             <a href="/dashboard/budgets" className="flex items-center hover:bg-gray-100 p-2 rounded-lg">
               <PiggyBank className="mr-2 h-5 w-5 text-gray-600" />
               Budgets
@@ -124,10 +128,7 @@ function Dashboard() {
               <ReceiptText className="mr-2 h-5 w-5 text-gray-600" />
               Expenses
             </a>
-            <a href="/dashboard/incomes" className="flex items-center hover:bg-gray-100 p-2 rounded-lg">
-              <CircleDollarSign className="mr-2 h-5 w-5 text-gray-600" />
-              Incomes
-            </a>
+          
             <a href="/dashboard/upgrade" className="flex items-center hover:bg-gray-100 p-2 rounded-lg">
               <ShieldCheck className="mr-2 h-5 w-5 text-gray-600" />
               Upgrade
